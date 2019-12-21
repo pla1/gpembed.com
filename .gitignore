@@ -1,0 +1,139 @@
+Skip to content
+ 
+Search…
+All gists
+Back to GitHub
+@pla1 
+@dedunumax dedunumax/.gitignore Java
+Last active yesterday • Report abuse
+49
+21
+ Code Revisions 12 Stars 49 Forks 21
+<script src="https://gist.github.com/dedunumax/54e82214715e35439227.js"></script>
+  
+A complete .gitignore file for Java
+ .gitignore Java
+##############################
+## Java
+##############################
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+##############################
+## Maven
+##############################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+##############################
+## Gradle
+##############################
+bin/
+build/
+.gradle
+.gradletasknamecache
+gradle-app.setting
+!gradle-wrapper.jar
+
+##############################
+## IntelliJ
+##############################
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+
+##############################
+## Eclipse
+##############################
+.settings/
+bin/
+tmp/
+.metadata
+.classpath
+.project
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+
+##############################
+## NetBeans
+##############################
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+##############################
+## OS X
+##############################
+.DS_Store
+@jsumanadas
+jsumanadas commented on Sep 10
+very useful stuff tk Dedunumax
+
+@dedunumax
+Owner
+Author
+dedunumax commented on Sep 12
+Please feel free to suggest changes.
+
+@yashinweb
+yashinweb commented on Oct 28
+Very nice, thx
+
+@pndurette
+pndurette commented on Nov 1
+Thanks for this!
+I noticed in a project I'm working on, the file .factorypath gets also auto-build (by VS Code, but seems to be an Eclipse thing as well)
+
+@dedunumax
+Owner
+Author
+dedunumax commented on Nov 2
+I thought VSCode doesn't create files. Let me check and I will change the file accordingly. Thanks a lot for the suggestion.
+
+@pndurette
+pndurette commented on Nov 2
+Could possibly be maven as well—
+(I work with this project but not with the Java portion specifically)
+
+@pla1
+ 
+Leave a comment
+Attach files to your comment
+Attach files by dragging & dropping, selecting or pasting them.
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+
