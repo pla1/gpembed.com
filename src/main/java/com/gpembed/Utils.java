@@ -30,6 +30,14 @@ public class Utils {
             System.out.format("Element %s Element attribute: %s\n", element, element.attr("content"));
             return element.attr("content");
         }
+        if (elements.size() == 0) {
+            elements = doc.getAllElements();
+            for (Element element:elements) {
+                if (element.toString().contains("og:")) {
+                    System.out.format("%s\n\n", element.toString());
+                }
+            }
+        }
         return null;
     }
 }
