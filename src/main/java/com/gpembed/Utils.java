@@ -22,9 +22,10 @@ public class Utils {
     }
 
     public static String getEmbedUrl(String urlString) throws IOException {
-        Document doc = Jsoup.connect(urlString).get();
+        Document doc = Jsoup.connect(urlString).userAgent("curl/7.58.0").followRedirects(true).get();
         String query = "meta[property='og:image']";
         Elements elements = doc.select(query);
+    //    Elements elements = doc.getElementsByTag("meta");
         System.out.format("%d elements found with query: \"%s\" via URL %s\n", elements.size(), query, urlString);
         for (Element element:elements) {
             System.out.format("Element %s Element attribute: %s\n", element, element.attr("content"));
